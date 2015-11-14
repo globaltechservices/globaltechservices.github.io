@@ -12,6 +12,97 @@
   <script src="js/jquery.js"></script>
   <script src="js/jquery-migrate-1.2.1.js"></script>
   <script src='js/device.min.js'></script>
+<style>
+/***
+Bootstrap Line Tabs by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+***/
+
+/* Tabs panel */
+.tabbable-panel {
+  border:1px solid #eee;
+  padding: 10px;
+}
+
+/* Default mode */
+.tabbable-line > .nav-tabs {
+  border: none;
+  margin: 0px;
+}
+.tabbable-line > .nav-tabs > li {
+  margin-right: 2px;
+}
+.tabbable-line > .nav-tabs > li > a {
+  border: 0;
+  margin-right: 0;
+  color: #737373;
+}
+.tabbable-line > .nav-tabs > li > a > i {
+  color: #a6a6a6;
+}
+.tabbable-line > .nav-tabs > li.open, .tabbable-line > .nav-tabs > li:hover {
+  border-bottom: 4px solid #fbcdcf;
+}
+.tabbable-line > .nav-tabs > li.open > a, .tabbable-line > .nav-tabs > li:hover > a {
+  border: 0;
+  background: none !important;
+  color: #333333;
+}
+.tabbable-line > .nav-tabs > li.open > a > i, .tabbable-line > .nav-tabs > li:hover > a > i {
+  color: #a6a6a6;
+}
+.tabbable-line > .nav-tabs > li.open .dropdown-menu, .tabbable-line > .nav-tabs > li:hover .dropdown-menu {
+  margin-top: 0px;
+}
+.tabbable-line > .nav-tabs > li.active {
+  border-bottom: 4px solid #f3565d;
+  position: relative;
+}
+.tabbable-line > .nav-tabs > li.active > a {
+  border: 0;
+  color: #333333;
+}
+.tabbable-line > .nav-tabs > li.active > a > i {
+  color: #404040;
+}
+.tabbable-line > .tab-content {
+  margin-top: -3px;
+  background-color: #fff;
+  border: 0;
+  border-top: 1px solid #eee;
+  padding: 15px 0;
+}
+.portlet .tabbable-line > .tab-content {
+  padding-bottom: 0;
+}
+
+/* Below tabs mode */
+
+.tabbable-line.tabs-below > .nav-tabs > li {
+  border-top: 4px solid transparent;
+}
+.tabbable-line.tabs-below > .nav-tabs > li > a {
+  margin-top: 0;
+}
+.tabbable-line.tabs-below > .nav-tabs > li:hover {
+  border-bottom: 0;
+  border-top: 4px solid #fbcdcf;
+}
+.tabbable-line.tabs-below > .nav-tabs > li.active {
+  margin-bottom: -2px;
+  border-bottom: 0;
+  border-top: 4px solid #f3565d;
+}
+.tabbable-line.tabs-below > .tab-content {
+  margin-top: -10px;
+  border-top: 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+</style>
+
+
 </head>
 
 <body>
@@ -98,106 +189,80 @@
 
 
 
-<section style="background:#efefe9;">
-        <div class="container">
-            <div class="row">
-                <div class="board">
-                    <!-- <h2>Welcome to IGHALO!<sup>™</sup></h2>-->
-                    <div class="board-inner">
-                    <ul class="nav nav-tabs" id="myTab">
-                    <div class="liner"></div>
-                     <li class="active">
-                     <a href="#home" data-toggle="tab" title="welcome">
-                      <span class="round-tabs one">
-                              <i class="glyphicon glyphicon-home"></i>
-                      </span> 
-                  </a></li>
 
-                  <li><a href="#profile" data-toggle="tab" title="profile">
-                     <span class="round-tabs two">
-                         <i class="glyphicon glyphicon-user"></i>
-                     </span> 
-           </a>
-                 </li>
-                 <li><a href="#messages" data-toggle="tab" title="bootsnipp goodies">
-                     <span class="round-tabs three">
-                          <i class="glyphicon glyphicon-gift"></i>
-                     </span> </a>
-                     </li>
+<div class="container">
+    <div class="row">
+    <div class="col-md-12">
+      <h3>Default Tab</h3>
 
-                     <li><a href="#settings" data-toggle="tab" title="blah blah">
-                         <span class="round-tabs four">
-                              <i class="glyphicon glyphicon-comment"></i>
-                         </span> 
-                     </a></li>
-
-                     <li><a href="#doner" data-toggle="tab" title="completed">
-                         <span class="round-tabs five">
-                              <i class="glyphicon glyphicon-ok"></i>
-                         </span> </a>
-                     </li>
-                     
-                     </ul></div>
-
-                     <div class="tab-content">
-                      <div class="tab-pane fade in active" id="home">
-
-                          <h3 class="head text-center">Welcome to Bootsnipp<sup>™</sup> <span style="color:#f48260;">♥</span></h3>
-                          <p class="narrow text-center">
-                              Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
-                          </p>
-                          
-                          <p class="text-center">
-                    <a href="" class="btn btn-success btn-outline-rounded green"> start using bootsnipp <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
-                </p>
-                      </div>
-                      <div class="tab-pane fade" id="profile">
-                          <h3 class="head text-center">Create a Bootsnipp<sup>™</sup> Profile</h3>
-                          <p class="narrow text-center">
-                              Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
-                          </p>
-                          
-                          <p class="text-center">
-                    <a href="" class="btn btn-success btn-outline-rounded green"> create your profile <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
-                </p>
-                          
-                      </div>
-                      <div class="tab-pane fade" id="messages">
-                          <h3 class="head text-center">Bootsnipp goodies</h3>
-                          <p class="narrow text-center">
-                              Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
-                          </p>
-                          
-                          <p class="text-center">
-                    <a href="" class="btn btn-success btn-outline-rounded green"> start using bootsnipp <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
-                </p>
-                      </div>
-                      <div class="tab-pane fade" id="settings">
-                          <h3 class="head text-center">Drop comments!</h3>
-                          <p class="narrow text-center">
-                              Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
-                          </p>
-                          
-                          <p class="text-center">
-                    <a href="" class="btn btn-success btn-outline-rounded green"> start using bootsnipp <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
-                </p>
-                      </div>
-                      <div class="tab-pane fade" id="doner">
-  <div class="text-center">
-    <i class="img-intro icon-checkmark-circle"></i>
-</div>
-<h3 class="head text-center">thanks for staying tuned! <span style="color:#f48260;">♥</span> Bootstrap</h3>
-<p class="narrow text-center">
-  Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
-</p>
-</div>
-<div class="clearfix"></div>
+      <div class="tabbable-panel">
+        <div class="tabbable-line">
+          <ul class="nav nav-tabs ">
+            <li class="active">
+              <a href="#tab_default_1" data-toggle="tab">
+              Tab 1 </a>
+            </li>
+            <li>
+              <a href="#tab_default_2" data-toggle="tab">
+              Tab 2 </a>
+            </li>
+            <li>
+              <a href="#tab_default_3" data-toggle="tab">
+              Tab 3 </a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active fade in" id="tab_default_1">
+              <p>
+                I'm in Tab 1.
+              </p>
+              <p>
+                Duis autem eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.
+              </p>
+              <p>
+                <a class="btn btn-success" href="http://j.mp/metronictheme" target="_blank">
+                  Learn more...
+                </a>
+              </p>
+            </div>
+            <div class="tab-pane fade" id="tab_default_2">
+              <p>
+                Howdy, I'm in Tab 2.
+              </p>
+              <p>
+                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.
+              </p>
+              <p>
+                <a class="btn btn-warning" href="http://j.mp/metronictheme" target="_blank">
+                  Click for more features...
+                </a>
+              </p>
+            </div>
+            <div class="tab-pane fade" id="tab_default_3">
+              <p>
+                Howdy, I'm in Tab 3.
+              </p>
+              <p>
+                Duis autem vel eum iriure dolor in hendrerit in vulputate. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat
+              </p>
+              <p>
+                <a class="btn btn-info" href="http://j.mp/metronictheme" target="_blank">
+                  Learn more...
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+          </div>
+  </div>
 </div>
 
-</div>
-</div>
-</div>
-</section>
+
+
+
+
+
 
 
 
