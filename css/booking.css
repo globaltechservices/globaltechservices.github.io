@@ -2,7 +2,7 @@
 #bookingForm {
   position: relative;
   width: 100%;
-  height: 263px;
+  height: 350px;
   font: 14px/24px 'Ubuntu', sans-serif;
 }
 #bookingForm *::-webkit-input-placeholder {
