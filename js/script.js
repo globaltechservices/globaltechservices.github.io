@@ -264,6 +264,11 @@ document.write('<meta name="viewport" content="width=device-width,initial-scale=
 })(jQuery);
 
 
+/*Tabs */
+$(function(){
+$('a[title]').tooltip();
+});
+
 
 
 
