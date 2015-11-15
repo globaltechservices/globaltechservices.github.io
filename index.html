@@ -55,7 +55,7 @@
       <section class="parallax parallax1" data-parallax-speed="-0.2">
         <div class="container">
           <div class="row">
-            <div class="grid_6 wow fadeInLeft" data-wow-delay="0.2s">
+            <div class="grid_6 wow fadeInLeft" data-wow-delay="0.2s" style="rgba(1,1,1,.2); padding:0 15px">
               <h2>
                 Solve your problems remotely  <br/>
                 from certified experts!
@@ -78,26 +78,111 @@
               </ul>
             </div>
             <div class="grid_4 preffix_1" style="background-color: rgba(51,51,51,.6); padding-left:15px; padding-right:15px;">
-              <h3>
-                Get expert help now!
-              </h3>
+              <div class="form-area " style="text-align:center">
+                 <br style="clear: both">
+                <span id="MainHeader"><h3 style="margin-bottom: 25px; text-align: center;">Get expert help now! <br> We will get in contact with you soon.
+                </h3>
+                    </span>
+                <div class="form-group">
+                    <span id="nameTitle"><h5>First and Last Name:</h5></span>
+                    <input name="nameTextbox" type="text" id="nameTextbox" class="form-control boxAlignment" placeholder="Name" data-constraints='@NotEmpty @Required'>
+                    
+                </div>
+                <div class="form-group">
+                     <span id="emailTitle"><h5>Valid Email:</h5></span>
+                    <input name="emailTextBox" data-constraints="@NotEmpty @Required @Email" type="text" id="emailTextBox" class="form-control boxAlignment" placeholder="Email">
+                      </div>
+                <div class="form-group">
+                    <span id="phoneNumberTitle"><h5>Phone Number format: XXXXXXXXXX</h5></span>
+                    <input name="mobileTextbox" data-constraints='@NotEmpty @Required @Phone' type="text" id="mobileTextbox" class="form-control boxAlignment" placeholder="Phone Number XXXXXXXXXX">
+               
+                </div>
+                <div class="form-group">
+                     <span id="messageTitle"><h5>Explain what's happening:</h5></span>
+                    <textarea name="messageTextBox" rows="3" cols="10" id="messageTextBox" class="form-control boxAlignment" placeholder="Please describe what is wrong" data-constraints='@NotEmpty @Required'></textarea>
+                </div>
+                <div class="form-group">
+                <span id="serviceLabel"><h5>Select a service: </h5></span>
+                <select name="dropdownService" id="dropdownService" style="color:#006666;font-weight:bold;margin: 0 auto; display:block;">
+  <option value="----Select----">----Select----</option>
+  <option value="Virus/Spyware Removal">Virus/Spyware Removal</option>
+  <option value="PC Tune Up">PC Tune Up</option>
+  <option value="Software Installation">Software Installation</option>
+  <option value="OS Reload">OS Reload</option>
+  <option value="Data Transfer">Data Transfer</option>
+  <option value="Outlook Business Setup">Outlook Business Setup</option>
 
+</select>
+<span id="RequiredFieldValidator1" style="color:Red;visibility:hidden;">Value Required!</span>
+
+
+<div>
+            
+        </div> 
+                </div>
+                <div class="form-group">
+                    <span id="configText"><h4>Confirm the following:</h4> </span>
+                  
+                      
+                        <div class="col-md-11">
+                        <div class="col-md-4">  <span type="checkbox" class="boxAlignment AcceptedAgreement" required="" style="vertical-align:-webkit-baseline-middle; float:right"><input id="terms_checkbox" type="checkbox" name="terms_checkbox"></span>
+                            <span id="CheckBoxRequired" style="color:Red;font-weight:bold;visibility:hidden;">You must select this box to proceed.</span></div>
+<a id="termsAndCondition" href="#success" data-toggle="modal" style="float:left"><h4> Terms and Conditions</h4></a>
+                        <div class="col-md-6"> </div>
+                        
+                           
+                            
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header modal-header-success">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <h1><i class="glyphicon glyphicon-thumbs-up"></i> Terms and Conditions
+                                        </h1>
+                                    </div>
+                                    <div class="modal-body">
+<embed src="CSS/ClientAgreementForm-Web.pdf" width="520px" height="670px">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal -->
+                    </div>
+<div class="form-group">
+                <input type="submit" name="submitBtn" value="Submit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;submitBtn&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="submitBtn" class="btn btn-primary" style="width:100%">
+    <div>
+        <br>
+ 
+                               
+    </div>
+</div>
+        </div>
+<!--
               <form id="bookingForm" class="booking-form">
                 <div class="tmInput">
+                  <label>Name</label>
                   <input name="Name" placeHolder="Name" type="text"
                          data-constraints='@NotEmpty @Required @AlphaSpecial'>
                 </div>
                 <div class="tmInput">
+                  <label>Email</label>
                   <input name="Email" placeHolder="E-mail" type="text" data-constraints="@NotEmpty @Required @Email">
                 </div>
                 <div class="tmInput">
+                  <label>Phone</label>
                   <input name="Phone" placeHolder="Phone" type="text" data-constraints='@NotEmpty @Required @Phone'>
                 </div>
                 <div class="tmInput">
+                  <label>More Detail</label>
                   <input name="MoreDetail" placeHolder="More Detail" type="text" data-constraints='@NotEmpty @Required'>
                 </div>
                 <a href="#" class="btn" data-type="submit">Submit</a>
               </form>
+            -->
             </div>
           </div>
         </div>
@@ -584,7 +669,7 @@ Licensed under MIT
   <footer>
     <div class="container">
       <p class="copyright">
-        HTMLPro © <span id="copyright-year"></span>.
+        HTMLPro © 2000.
         <a href="#">Privacy Policy</a>
         <!-- {%FOOTER_LINK} -->
       </p>
